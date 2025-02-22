@@ -52,7 +52,7 @@ impl Serialize for TwilioProgrammableFaxError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioProgrammableFaxError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::ProgrammableFax(self)

@@ -88,7 +88,7 @@ impl Serialize for TwilioSyncError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioSyncError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Sync(self)

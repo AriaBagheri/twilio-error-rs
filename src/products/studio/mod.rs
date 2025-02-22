@@ -73,7 +73,7 @@ impl Serialize for TwilioStudioError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioStudioError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Studio(self)

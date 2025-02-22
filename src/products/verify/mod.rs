@@ -203,7 +203,7 @@ impl Serialize for TwilioVerifyError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioVerifyError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Verify(self)

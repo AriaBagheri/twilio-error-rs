@@ -64,7 +64,7 @@ impl Serialize for TwilioProgrammableWirelessError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioProgrammableWirelessError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::ProgrammableWireless(self)

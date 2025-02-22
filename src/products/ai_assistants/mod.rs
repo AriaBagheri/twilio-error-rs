@@ -52,7 +52,7 @@ impl Serialize for TwilioAiAssistantsError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioAiAssistantsError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::AiAssistants(self)

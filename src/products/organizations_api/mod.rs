@@ -82,7 +82,7 @@ impl Serialize for TwilioOrganizationsApiError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioOrganizationsApiError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::OrganizationsApi(self)

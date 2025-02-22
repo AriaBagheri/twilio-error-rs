@@ -74,7 +74,7 @@ impl Serialize for TwilioSuperSimError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioSuperSimError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::SuperSim(self)

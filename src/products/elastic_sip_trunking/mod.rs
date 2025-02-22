@@ -82,7 +82,7 @@ impl Serialize for TwilioElasticSipTrunkingError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioElasticSipTrunkingError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::ElasticSipTrunking(self)

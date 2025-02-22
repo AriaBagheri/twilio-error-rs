@@ -214,7 +214,7 @@ impl Serialize for TwilioProgrammableChatError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioProgrammableChatError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::ProgrammableChat(self)

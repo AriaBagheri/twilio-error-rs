@@ -52,7 +52,7 @@ impl Serialize for TwilioUnderstandError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioUnderstandError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Understand(self)

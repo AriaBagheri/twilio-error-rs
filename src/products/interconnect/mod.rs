@@ -86,7 +86,7 @@ impl Serialize for TwilioInterconnectError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioInterconnectError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Interconnect(self)

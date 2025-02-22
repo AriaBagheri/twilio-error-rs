@@ -1,6 +1,6 @@
 // AUTO-GENERATED. DO NOT MODIFY. YOUR CHANGES WILL BE OVER-WRITTEN
 use standard_error::traits::StandardErrorFromCodeTrait;
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 use super::*;
 
 impl StandardErrorFromCodeTrait for TwilioProductError {

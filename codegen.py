@@ -30,7 +30,7 @@ def main():
     with open("src/products/from_code.rs", "w") as f:
         f.write(f"""// AUTO-GENERATED. DO NOT MODIFY. YOUR CHANGES WILL BE OVER-WRITTEN
 use standard_error::traits::StandardErrorFromCodeTrait;
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 use super::*;
 
 impl StandardErrorFromCodeTrait for TwilioProductError {{
@@ -161,7 +161,7 @@ impl Serialize for {class_name} {{
     }}
 }}
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for {class_name} {{
     fn into(self) -> TwilioProductError {{
         TwilioProductError::{class_name_raw}(self)

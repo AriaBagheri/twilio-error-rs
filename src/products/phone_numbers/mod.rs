@@ -195,7 +195,7 @@ impl Serialize for TwilioPhoneNumbersError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioPhoneNumbersError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::PhoneNumbers(self)

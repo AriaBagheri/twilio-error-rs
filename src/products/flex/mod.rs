@@ -164,7 +164,7 @@ impl Serialize for TwilioFlexError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioFlexError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Flex(self)

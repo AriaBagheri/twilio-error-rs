@@ -102,7 +102,7 @@ impl Serialize for TwilioTaskrouterError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioTaskrouterError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Taskrouter(self)

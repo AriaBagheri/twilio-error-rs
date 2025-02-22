@@ -256,7 +256,7 @@ impl Serialize for TwilioProgrammableSmsError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioProgrammableSmsError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::ProgrammableSms(self)

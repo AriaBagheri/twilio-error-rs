@@ -54,7 +54,7 @@ impl Serialize for TwilioNotifyError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioNotifyError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Notify(self)

@@ -66,7 +66,7 @@ impl Serialize for TwilioFrontlineError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioFrontlineError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Frontline(self)

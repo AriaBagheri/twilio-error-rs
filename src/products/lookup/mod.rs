@@ -67,7 +67,7 @@ impl Serialize for TwilioLookupError {
     }
 }
 
-use crate::TwilioProductError;
+use crate::products::TwilioProductError;
 impl Into<TwilioProductError> for TwilioLookupError {
     fn into(self) -> TwilioProductError {
         TwilioProductError::Lookup(self)
