@@ -1,0 +1,82 @@
+// AUTO-GENERATED. DO NOT MODIFY. YOUR CHANGES WILL BE OVER-WRITTEN
+use crate::products::TwilioNotificationsError;
+use standard_error::traits::StandardErrorDescriptionTrait;
+
+impl StandardErrorDescriptionTrait for TwilioNotificationsError {
+    fn description(&self) -> Option<&'static str> {
+        match self {
+            TwilioNotificationsError::ErrorCode52108 => None,
+            TwilioNotificationsError::ErrorCode52202 => None,
+            TwilioNotificationsError::ErrorCode52052 => None,
+            TwilioNotificationsError::ErrorCode52211 => None,
+            TwilioNotificationsError::ErrorCode52102 => None,
+            TwilioNotificationsError::ErrorCode52143 => Some(r#"The push notification was rejected by APNs for some reason.
+
+NB: Twilio push infrastructure does not support the notifications to not main certificate topic. So application device token and certificate subject must have the same bundle id. For instance, for VoIP notifications the certificate subject must end with "*.voip" and the device token app bundle ends with "*.voip"."#),
+            TwilioNotificationsError::ErrorCode52171 => None,
+            TwilioNotificationsError::ErrorCode52131 => None,
+            TwilioNotificationsError::ErrorCode52133 => None,
+            TwilioNotificationsError::ErrorCode52163 => None,
+            TwilioNotificationsError::ErrorCode52162 => None,
+            TwilioNotificationsError::ErrorCode52103 => None,
+            TwilioNotificationsError::ErrorCode52164 => None,
+            TwilioNotificationsError::ErrorCode52137 => None,
+            TwilioNotificationsError::ErrorCode52145 => None,
+            TwilioNotificationsError::ErrorCode52001 => None,
+            TwilioNotificationsError::ErrorCode52109 => None,
+            TwilioNotificationsError::ErrorCode52172 => None,
+            TwilioNotificationsError::ErrorCode52104 => None,
+            TwilioNotificationsError::ErrorCode52071 => None,
+            TwilioNotificationsError::ErrorCode52105 => None,
+            TwilioNotificationsError::ErrorCode52213 => None,
+            TwilioNotificationsError::ErrorCode52167 => None,
+            TwilioNotificationsError::ErrorCode52214 => None,
+            TwilioNotificationsError::ErrorCode52304 => None,
+            TwilioNotificationsError::ErrorCode52140 => None,
+            TwilioNotificationsError::ErrorCode52215 => None,
+            TwilioNotificationsError::ErrorCode52182 => None,
+            TwilioNotificationsError::ErrorCode52149 => None,
+            TwilioNotificationsError::ErrorCode52305 => None,
+            TwilioNotificationsError::ErrorCode52181 => None,
+            TwilioNotificationsError::ErrorCode52144 => None,
+            TwilioNotificationsError::ErrorCode52166 => None,
+            TwilioNotificationsError::ErrorCode52309 => None,
+            TwilioNotificationsError::ErrorCode52401 => None,
+            TwilioNotificationsError::ErrorCode52203 => None,
+            TwilioNotificationsError::ErrorCode52165 => None,
+            TwilioNotificationsError::ErrorCode52135 => None,
+            TwilioNotificationsError::ErrorCode52107 => None,
+            TwilioNotificationsError::ErrorCode52072 => None,
+            TwilioNotificationsError::ErrorCode52111 => None,
+            TwilioNotificationsError::ErrorCode52307 => None,
+            TwilioNotificationsError::ErrorCode52000 => None,
+            TwilioNotificationsError::ErrorCode52306 => None,
+            TwilioNotificationsError::ErrorCode52136 => None,
+            TwilioNotificationsError::ErrorCode52051 => None,
+            TwilioNotificationsError::ErrorCode52174 => None,
+            TwilioNotificationsError::ErrorCode52302 => Some(r#"## Error - 52302
+
+### Request has exceeded the maximum recipients limit. No deliveries were attempted."#),
+            TwilioNotificationsError::ErrorCode52138 => None,
+            TwilioNotificationsError::ErrorCode52170 => None,
+            TwilioNotificationsError::ErrorCode52141 => None,
+            TwilioNotificationsError::ErrorCode52161 => None,
+            TwilioNotificationsError::ErrorCode52301 => None,
+            TwilioNotificationsError::ErrorCode52142 => None,
+            TwilioNotificationsError::ErrorCode52303 => None,
+            TwilioNotificationsError::ErrorCode52148 => None,
+            TwilioNotificationsError::ErrorCode52212 => None,
+            TwilioNotificationsError::ErrorCode52003 => None,
+            TwilioNotificationsError::ErrorCode52168 => None,
+            TwilioNotificationsError::ErrorCode52147 => None,
+            TwilioNotificationsError::ErrorCode52002 => None,
+            TwilioNotificationsError::ErrorCode52139 => None,
+            TwilioNotificationsError::ErrorCode52101 => None,
+            TwilioNotificationsError::ErrorCode52173 => None,
+            TwilioNotificationsError::ErrorCode52106 => None,
+            TwilioNotificationsError::ErrorCode52110 => None,
+            TwilioNotificationsError::ErrorCode52201 => None,
+            TwilioNotificationsError::ErrorCode52134 => None
+        }
+    }
+}

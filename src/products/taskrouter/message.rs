@@ -1,0 +1,67 @@
+// AUTO-GENERATED. DO NOT MODIFY. YOUR CHANGES WILL BE OVER-WRITTEN
+use crate::products::TwilioTaskrouterError;
+use standard_error::traits::StandardErrorMessageTrait;
+use std::borrow::Cow;
+
+impl StandardErrorMessageTrait for TwilioTaskrouterError {
+    fn message(&self) -> Cow<'static, str> {
+        match self {
+            TwilioTaskrouterError::ErrorCode40114 => r#"TaskRouter->Call"#.into(),
+            TwilioTaskrouterError::ErrorCode40121 => r#"TaskRouter->Direct"#.into(),
+            TwilioTaskrouterError::ErrorCode14233 => r#"Dial->Conference: Invalid Timeout"#.into(),
+            TwilioTaskrouterError::ErrorCode40142 => r#"Failed to issue Conference instruction due to missing 'call_sid' or 'outbound_to' properties"#.into(),
+            TwilioTaskrouterError::ErrorCode14236 => r#"Dial->Conference: Invalid ReservationSid"#.into(),
+            TwilioTaskrouterError::ErrorCode40143 => r#"TaskRouter->Conference"#.into(),
+            TwilioTaskrouterError::ErrorCode40001 => r#"Could not parse Assignment Instruction response as JSON. Ensure your JSON is not escaped"#.into(),
+            TwilioTaskrouterError::ErrorCode40120 => r#"TaskRouter->Direct"#.into(),
+            TwilioTaskrouterError::ErrorCode40130 => r#"TaskRouter->Dequeue"#.into(),
+            TwilioTaskrouterError::ErrorCode40138 => r#"Missing 'from' parameter when issuing Conference instruction"#.into(),
+            TwilioTaskrouterError::ErrorCode40135 => r#"TaskRouter->Dequeue"#.into(),
+            TwilioTaskrouterError::ErrorCode40152 => r#"Invalid Queue for Known Worker"#.into(),
+            TwilioTaskrouterError::ErrorCode40005 => r#"Assignment Callback response does not contain Instruction"#.into(),
+            TwilioTaskrouterError::ErrorCode14238 => r#"Dial->Conference: Unable to accept Reservation"#.into(),
+            TwilioTaskrouterError::ErrorCode40155 => r#"Invalid Workspace for Known Worker"#.into(),
+            TwilioTaskrouterError::ErrorCode40140 => r#"Failed to issue Dequeue instruction due to missing 'call_sid' property"#.into(),
+            TwilioTaskrouterError::ErrorCode14230 => r#"Dial->Conference: Invalid WorkflowSid"#.into(),
+            TwilioTaskrouterError::ErrorCode14217 => r#"Dial->Queue: Could not find or accept provided reservationSid"#.into(),
+            TwilioTaskrouterError::ErrorCode40158 => r#"Call Instruction does not have a valid 'status_callback_url' parameter"#.into(),
+            TwilioTaskrouterError::ErrorCode40157 => r#"Dequeue Instruction does not have a valid 'status_callback_url' parameter"#.into(),
+            TwilioTaskrouterError::ErrorCode40137 => r#"Missing 'to' parameter when issuing Conference instruction"#.into(),
+            TwilioTaskrouterError::ErrorCode40147 => r#"Failed to issue Supervise instruction due to missing or invalid 'contact_uri' property"#.into(),
+            TwilioTaskrouterError::ErrorCode40151 => r#"TaskRouter->Invalid instruction"#.into(),
+            TwilioTaskrouterError::ErrorCode40134 => r#"Dequeue Instruction does not have a valid 'status_callback_events' parameter"#.into(),
+            TwilioTaskrouterError::ErrorCode14239 => r#"Dial->Conference: Unable to update Worker"#.into(),
+            TwilioTaskrouterError::ErrorCode40000 => r#"Content-Type of 'application/json' not set"#.into(),
+            TwilioTaskrouterError::ErrorCode40123 => r#"TaskRouter->Redirect"#.into(),
+            TwilioTaskrouterError::ErrorCode14222 => r#"Enqueue: Could not create Task"#.into(),
+            TwilioTaskrouterError::ErrorCode14240 => r#"Max concurrent Workers exceeded"#.into(),
+            TwilioTaskrouterError::ErrorCode14235 => r#"Dial->Conference: Unable to cleanup task"#.into(),
+            TwilioTaskrouterError::ErrorCode14234 => r#"Dial->Conference: Unable to create task"#.into(),
+            TwilioTaskrouterError::ErrorCode14237 => r#"Dial->Conference: Invalid PostWorkActivitySid"#.into(),
+            TwilioTaskrouterError::ErrorCode40111 => r#"TaskRouter->Call"#.into(),
+            TwilioTaskrouterError::ErrorCode14241 => r#"start_date passed to TaskRouter statistics is older than 30 days."#.into(),
+            TwilioTaskrouterError::ErrorCode40144 => r#"TaskRouter->Conference"#.into(),
+            TwilioTaskrouterError::ErrorCode40100 => r#"TaskRouter->Reject"#.into(),
+            TwilioTaskrouterError::ErrorCode40149 => r#"Failed to issue Conference instruction due to missing ‘conference_sid’"#.into(),
+            TwilioTaskrouterError::ErrorCode40131 => r#"TaskRouter->Dequeue"#.into(),
+            TwilioTaskrouterError::ErrorCode40141 => r#"TaskRouter->Conference"#.into(),
+            TwilioTaskrouterError::ErrorCode14231 => r#"Dial->Conference: Provided Attributes was not valid JSON "#.into(),
+            TwilioTaskrouterError::ErrorCode55555 => r#"Invalid Instruction passed to TaskRouter"#.into(),
+            TwilioTaskrouterError::ErrorCode40153 => r#"Absolute Paging used when iterating TaskRouter resources"#.into(),
+            TwilioTaskrouterError::ErrorCode14232 => r#"Dial->Conference: Invalid Priority"#.into(),
+            TwilioTaskrouterError::ErrorCode40145 => r#"TaskRouter->Conference"#.into(),
+            TwilioTaskrouterError::ErrorCode40136 => r#"TaskRouter->Conference"#.into(),
+            TwilioTaskrouterError::ErrorCode40132 => r#"TaskRouter->Dequeue"#.into(),
+            TwilioTaskrouterError::ErrorCode40112 => r#"TaskRouter->Call"#.into(),
+            TwilioTaskrouterError::ErrorCode40122 => r#"TaskRouter->Direct"#.into(),
+            TwilioTaskrouterError::ErrorCode40113 => r#"TaskRouter->Call"#.into(),
+            TwilioTaskrouterError::ErrorCode40133 => r#"TaskRouter->Dequeue"#.into(),
+            TwilioTaskrouterError::ErrorCode40148 => r#"Failed to issue Supervise instruction due to missing ‘from’ property"#.into(),
+            TwilioTaskrouterError::ErrorCode40154 => r#"Invalid Known Worker information"#.into(),
+            TwilioTaskrouterError::ErrorCode40159 => r#"Conference Instruction does not have a valid 'status_callback_url' parameter"#.into(),
+            TwilioTaskrouterError::ErrorCode40139 => r#"Failed to issue Conference Instruction due to invalid ActivitySid"#.into(),
+            TwilioTaskrouterError::ErrorCode40110 => r#"TaskRouter->Call"#.into(),
+            TwilioTaskrouterError::ErrorCode40146 => r#"Failed to issue Supervise Instruction due to invalid Reservation state"#.into()
+        }
+    }
+}
